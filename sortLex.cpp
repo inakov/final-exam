@@ -29,7 +29,6 @@ int cmpLex(int a, int b) {
 	for (int i = 1; i <= minSize; i++) {
 		int nextNumberFromA = a / pow(10, (sizeA - i));
 		int nextNumberFromB = b / pow(10, (sizeB - i));
-		cout << nextNumberFromA << " ? " << nextNumberFromB << endl;
 		if (nextNumberFromA > nextNumberFromB) {
 			return -1;
 		} else if (nextNumberFromA < nextNumberFromB) {
@@ -53,7 +52,7 @@ void sort(int array[], int size) {
 		}
 	}
 
-	for (int i=0; i<6; i++) {
+	for (int i = 0; i < size; i++) {
 		cout << array[i] << " ";
 	}
 	cout << endl;
